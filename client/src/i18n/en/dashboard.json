@@ -1,0 +1,24 @@
+{
+  "title": "Dashboard",
+  "description": "Welcome to your dashboard. This is a mobile view. Please visit on desktop to access all features.",
+  "button": {
+    "create": "Create Resume",
+    "upload": "Upload Existing Resume"
+  },
+  "resume": {
+    "updated": "Updated on",
+    "delete": "Are you sure you want to delete this resume?"
+  },
+  "modal": {
+    "create": "Create New Resume",
+    "upload": "Upload Resume",
+    "edit": "Edit Resume Title"
+  },
+  "form": {
+    "placeholder": "Resume Title",
+    "select": "Select Resume File (PDF or DOCX)",
+    "upload": "Upload Resume",
+    "create": "Create Resume",
+    "update": "Update"
+  }
+}

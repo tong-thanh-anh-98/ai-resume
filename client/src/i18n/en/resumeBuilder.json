@@ -1,0 +1,15 @@
+{
+  "navigation": {
+    "back": "Back to Dashboard",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "section": {
+    "personal": "Personal Info",
+    "summary": "Summary",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills"
+  }
+}

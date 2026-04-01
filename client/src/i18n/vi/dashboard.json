@@ -1,0 +1,24 @@
+{
+  "title": "Bảng điều khiển",
+  "description": "Chào mừng đến với bảng điều khiển của bạn. Đây là giao diện trên thiết bị di động. Vui lòng truy cập bằng máy tính để sử dụng đầy đủ các tính năng.",
+  "button": {
+    "create": "Tạo CV",
+    "upload": "Tải lên CV hiện có"
+  },
+  "resume": {
+    "updated": "Cập nhật lúc",
+    "delete": "Bạn có chắc chắn muốn xóa CV này không?"
+  },
+  "modal": {
+    "create": "Tạo CV mới",
+    "upload": "Tải CV lên",
+    "edit": "Chỉnh sửa tiêu đề"
+  },
+  "form": {
+    "placeholder": "Tiêu đề CV",
+    "select": "Chọn file CV (PDF hoặc DOCX)",
+    "upload": "Tải CV lên",
+    "create": "Tạo CV",
+    "update": "Cập nhật"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Thông tin cá nhân",
+  "description": "Bắt đầu bằng việc điền thông tin cá nhân.",
+  "button": {
+    "upload": "Tải ảnh người dùng lên",
+    "remove": "Xóa ảnh nền"
+  },
+  "fields": {
+    "full_name": "Họ và tên",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "location": "Địa chỉ",
+    "profession": "Nghề nghiệp",
+    "linkedin": "LinkedIn",
+    "website": "Website"
+  },
+  "placeholder": {
+    "full_name": "Nhập họ và tên",
+    "email": "Nhập email",
+    "phone": "Nhập số điện thoại",
+    "location": "Nhập địa chỉ",
+    "profession": "Nhập nghề nghiệp",
+    "linkedin": "Nhập link LinkedIn",
+    "website": "Nhập website"
+  }
+}

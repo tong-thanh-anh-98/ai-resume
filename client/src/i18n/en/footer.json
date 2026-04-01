@@ -1,0 +1,21 @@
+{
+  "product": "Product",
+  "resources": "Resources",
+  "legal": "Legal",
+  "links": {
+    "home": "Home",
+    "support": "Support",
+    "pricing": "Pricing",
+    "affiliate": "Affiliate",
+    "company": "Company",
+    "blogs": "Blogs",
+    "community": "Community",
+    "careers": "Careers",
+    "hiring": "We’re hiring!",
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "description": "Use AI to build professional resumes and boost your chances of getting hired.",
+  "copyright": "© {{year}} Resume Builder"
+}

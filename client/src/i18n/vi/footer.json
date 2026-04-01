@@ -1,0 +1,21 @@
+{
+  "product": "Sản phẩm",
+  "resources": "Tài nguyên",
+  "legal": "Pháp lý",
+  "links": {
+    "home": "Trang chủ",
+    "support": "Hỗ trợ",
+    "pricing": "Bảng giá",
+    "affiliate": "Cộng tác viên",
+    "company": "Công ty",
+    "blogs": "Blog",
+    "community": "Cộng đồng",
+    "careers": "Tuyển dụng",
+    "hiring": "Chúng tôi đang tuyển!",
+    "about": "Giới thiệu",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản"
+  },
+  "description": "Sử dụng AI để tạo CV chuyên nghiệp và tăng cơ hội trúng tuyển.",
+  "copyright": "© {{year}} Resume Builder"
+}

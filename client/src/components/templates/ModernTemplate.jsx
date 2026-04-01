@@ -4,7 +4,7 @@ const ModernTemplate = ({ data, accentColor }) => {
 	const formatDate = (dateStr) => {
 		if (!dateStr) return "";
 		const [year, month] = dateStr.split("-");
-		return new Date(year, month - 1).toLocaleDateString("en-US", {
+		return new Date(year, month - 1).toLocaleDateString("vi-VN", {
 			year: "numeric",
 			month: "short"
 		});

@@ -1,10 +1,9 @@
-import { APP_TEXT } from "../constants/appText";
+import { languages } from '../i18n';
 
-const DEFAULT_LANG = "vi";
+const DEFAULT_LANG = 'vi';
 
-export const useText = (section) => {
+export const useText = (namespace, langOverride) => {
+  const lang = langOverride || DEFAULT_LANG;
 
-  const lang = DEFAULT_LANG;
-
-  return section ? APP_TEXT[lang][section] : APP_TEXT[lang];
+  return languages[lang]?.[namespace] || {};
 };

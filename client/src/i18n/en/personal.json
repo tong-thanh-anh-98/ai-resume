@@ -1,0 +1,26 @@
+{
+  "title": "Personal Information",
+  "description": "Get started with the personal information.",
+  "button": {
+    "upload": "Upload user image",
+    "remove": "Remove Background"
+  },
+  "fields": {
+    "full_name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "location": "Location",
+    "profession": "Profession",
+    "linkedin": "LinkedIn",
+    "website": "Website"
+  },
+  "placeholder": {
+    "full_name": "Enter your full name",
+    "email": "Enter your email address",
+    "phone": "Enter your phone number",
+    "location": "Enter your location",
+    "profession": "Enter your profession",
+    "linkedin": "Enter your LinkedIn URL",
+    "website": "Enter your website URL"
+  }
+}

@@ -82,7 +82,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <p className="mt-3 text-center">Copyright: <Link to="#" className="hover:text-green-600 transition">{t.copyright}</Link></p>
+          <p className="mt-3 text-center">Copyright: <Link to="#" className="hover:text-green-600 transition">{t.copyright.replace("{{year}}", new Date().getFullYear())}</Link></p>
         </div>
       </footer>
     </>

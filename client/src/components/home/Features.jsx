@@ -4,7 +4,6 @@ import Title from './Title';
 import { useText } from '../../hooks/useText';
 
 const Features = () => {
-  const lang = "vi";
   const t = useText("features");
   const [isHover, setIsHover] = React.useState(false);
 

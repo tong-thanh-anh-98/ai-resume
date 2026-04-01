@@ -1,0 +1,19 @@
+{
+  "badge": "Quy trình đơn giản",
+  "title": "Tạo CV của bạn",
+  "description": "Khám phá những tính năng mạnh mẽ giúp nền tảng của chúng tôi nổi bật.",
+  "items": [
+    {
+      "title": "Phân tích thời gian thực",
+      "description": "Nhận thông tin chi tiết ngay lập tức với bảng điều khiển trực tiếp."
+    },
+    {
+      "title": "Bảo mật cấp ngân hàng",
+      "description": "Mã hóa đầu cuối, xác thực 2 lớp và tuân thủ tiêu chuẩn bảo mật."
+    },
+    {
+      "title": "Báo cáo tùy chỉnh",
+      "description": "Xuất báo cáo chuyên nghiệp phục vụ kiểm toán hoặc sử dụng nội bộ."
+    }
+  ]
+}

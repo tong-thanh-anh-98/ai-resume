@@ -1,0 +1,15 @@
+{
+  "navigation": {
+    "back": "Quay lại bảng điều khiển",
+    "previous": "Trước",
+    "next": "Tiếp theo"
+  },
+  "section": {
+    "personal": "Thông tin cá nhân",
+    "summary": "Tóm tắt",
+    "experience": "Kinh nghiệm",
+    "education": "Học vấn",
+    "projects": "Dự án",
+    "skills": "Kỹ năng"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "badge": "Simple Progress",
+  "title": "Build Your Resume",
+  "description": "Discover the powerful features that make our platform stand out.",
+  "items": [
+    {
+      "title": "Real-Time Analytics",
+      "description": "Get instant insights into your data with live dashboards."
+    },
+    {
+      "title": "Bank-Grade Security",
+      "description": "End-to-end encryption, 2FA, and compliance with security standards."
+    },
+    {
+      "title": "Customizable Reports",
+      "description": "Export professional reports for audits or internal use."
+    }
+  ]
+}
