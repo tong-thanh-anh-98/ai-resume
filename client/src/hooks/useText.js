@@ -1,5 +1,6 @@
 import { languages } from '../i18n';
 
+// const DEFAULT_LANG = 'en';
 const DEFAULT_LANG = 'vi';
 
 export const useText = (namespace, langOverride) => {

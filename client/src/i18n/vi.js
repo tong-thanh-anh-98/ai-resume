@@ -9,6 +9,10 @@ import footer from './vi/footer.json';
 import dashboard from './vi/dashboard.json';
 import personal from './vi/personal.json';
 import resumeBuilder from './vi/resumeBuilder.json';
+import classic from './vi/classic.json';
+import minimalImage from './vi/minimalImage.json';
+import minimalTemplate from './en/minimalTemplate.json';
+import modernTemplate from './en/modernTemplate.json';
 
 export default {
   auth,
@@ -22,4 +26,8 @@ export default {
   dashboard,
   personal,
   resumeBuilder,
+  classic,
+  minimalImage,
+  minimalTemplate,
+  modernTemplate
 };

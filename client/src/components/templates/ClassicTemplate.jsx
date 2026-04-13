@@ -1,12 +1,19 @@
 import { Mail, Phone, MapPin, Linkedin, Globe } from "lucide-react";
+import { useText } from "../../hooks/useText";
 
 const ClassicTemplate = ({ data, accentColor }) => {
+  const t = useText("classic");
+
   const formatDate = (dateStr) => {
     if (!dateStr) return "";
+
     const [year, month] = dateStr.split("-");
-    return new Date(year, month - 1).toLocaleDateString("en-US", {
+
+    const locale = navigator.language === "vi" ? "vi-VN" : "en-US";
+
+    return new Date(year, month - 1).toLocaleDateString(locale, {
       year: "numeric",
-      month: "short"
+      month: "short",
     });
   };
 
@@ -15,7 +22,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
       {/* Header */}
       <header className="text-center mb-8 pb-6 border-b-2" style={{ borderColor: accentColor }}>
         <h1 className="text-3xl font-bold mb-2" style={{ color: accentColor }}>
-          {data.personal_info?.full_name || "Your Name"}
+          {data.personal_info?.full_name || t.yourName}
         </h1>
 
         <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
@@ -56,7 +63,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
       {data.professional_summary && (
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-3" style={{ color: accentColor }}>
-            PROFESSIONAL SUMMARY
+            {t.summary}
           </h2>
           <p className="text-gray-700 leading-relaxed">{data.professional_summary}</p>
         </section>
@@ -66,7 +73,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
       {data.experience && data.experience.length > 0 && (
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-4" style={{ color: accentColor }}>
-            PROFESSIONAL EXPERIENCE
+            {t.experience}
           </h2>
 
           <div className="space-y-4">
@@ -78,7 +85,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
                     <p className="text-gray-700 font-medium">{exp.company}</p>
                   </div>
                   <div className="text-right text-sm text-gray-600">
-                    <p>{formatDate(exp.start_date)} - {exp.is_current ? "Present" : formatDate(exp.end_date)}</p>
+                    <p>{formatDate(exp.start_date)} - {exp.is_current ? t.present : formatDate(exp.end_date)}</p>
                   </div>
                 </div>
                 {exp.description && (
@@ -96,7 +103,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
       {data.project && data.project.length > 0 && (
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-4" style={{ color: accentColor }}>
-            PROJECTS
+            {t.projects}
           </h2>
 
           <ul className="space-y-3 ">
@@ -116,7 +123,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
       {data.education && data.education.length > 0 && (
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-4" style={{ color: accentColor }}>
-            EDUCATION
+            {t.education}
           </h2>
 
           <div className="space-y-3">
@@ -124,10 +131,10 @@ const ClassicTemplate = ({ data, accentColor }) => {
               <div key={index} className="flex justify-between items-start">
                 <div>
                   <h3 className="font-semibold text-gray-900">
-                    {edu.degree} {edu.field && `in ${edu.field}`}
+                    {edu.degree} {edu.field && `${t.in} ${edu.field}`}
                   </h3>
                   <p className="text-gray-700">{edu.institution}</p>
-                  {edu.gpa && <p className="text-sm text-gray-600">GPA: {edu.gpa}</p>}
+                  {edu.gpa && <p className="text-sm text-gray-600">{t.gpa}: {edu.gpa}</p>}
                 </div>
                 <div className="text-sm text-gray-600">
                   <p>{formatDate(edu.graduation_date)}</p>
@@ -142,7 +149,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
       {data.skills && data.skills.length > 0 && (
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-4" style={{ color: accentColor }}>
-            CORE SKILLS
+            {t.skills}
           </h2>
 
           <div className="flex gap-4 flex-wrap">

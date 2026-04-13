@@ -9,6 +9,9 @@ import EducationForm from '../components/EducationForm';
 import ProjectsForm from '../components/ProjectsForm';
 import SkillsForm from '../components/SkillsForm';
 import { useText } from '../hooks/useText';
+import ResumePreview from '../components/ResumePreview';
+import TemplateSelector from '../components/TemplateSelector';
+import ColorPicker from '../components/ColorPicker';
 
 const ResumeBuilder = () => {
   const t = useText("resumeBuilder");
@@ -71,18 +74,15 @@ const ResumeBuilder = () => {
       </div>
 
       <div className='max-w-7xl mx-auto px-4 pb-8'>
+
         <div className='grid lg:grid-cols-12 gap-8'>
           {/* left panel - form */}
-          <div
-            className='relative lg:col-span-5 rounded-lg overflow-hidden'
-          >
-            <div
-              className='bg-white rounded-lg shadow-sm border border-gray-200 p-6 pt-1'
-            >
+          <div className='relative lg:col-span-5 rounded-lg overflow-hidden'>
+
+            <div className='bg-white rounded-lg shadow-sm border border-gray-200 p-6 pt-1'>
+
               {/* progress bar using activeSectionIndex */}
-              <hr
-                className="absolute top-0 left-0 right-0 border-2 border-gray-200"
-              />
+              <hr className="absolute top-0 left-0 right-0 border-2 border-gray-200" />
 
               <hr
                 className="absolute top-0 left-0 h-1 bg-gradient-to-r from-green-500 to-green-600 border-none transition-all duration-2000"
@@ -90,20 +90,34 @@ const ResumeBuilder = () => {
               />
 
               {/* section navigation */}
-              <div
-                className='flex justify-between items-center mb-6 border-b border-gray-300 py-1'
-              >
-                <div></div>
+              <div className='flex justify-between items-center mb-6 border-b border-gray-300 py-1'>
+
+                <div className='flex items-center gap-2'>
+
+                  <TemplateSelector
+                    selectedTemplate={resumeData.template}
+                    onChange={(template) => setResumeData(prev => ({ ...prev, template }))}
+                  />
+
+                  <ColorPicker
+                    selectedColor={resumeData.accent_color}
+                    onChange={(color) => setResumeData(prev => ({ ...prev, accent_color: color }))}
+                  />
+                </div>
 
                 <div className='flex items-center'>
+
                   {activeSectionIndex !== 0 && (
+
                     <button
                       onClick={() => setActiveSectionIndex(prevIndex => Math.max(prevIndex - 1, 0))}
                       className='flex items-center gap-1 p-3 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50 transition-all'
                       disabled={activeSectionIndex === 0}
                     >
                       <ChevronLeft className='size-4' /> {t.navigation.previous}
+
                     </button>
+
                   )}
 
                   <button
@@ -111,7 +125,9 @@ const ResumeBuilder = () => {
                     className={`flex items-center gap-1 p-3 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50 transition-all ${activeSectionIndex === section.length - 1 ? 'opacity-50' : ''}`}
                     disabled={activeSectionIndex === section.length - 1}
                   >
+
                     {t.navigation.next} <ChevronRight className='size-4' />
+
                   </button>
 
                 </div>
@@ -119,16 +135,17 @@ const ResumeBuilder = () => {
               </div>
 
               {/* form content */}
-              <div
-                className='space-y-6'
-              >
+              <div className='space-y-6'>
+
                 {activeSection.id === 'personal' && (
+
                   <PersonalInfoForm
                     data={resumeData.personal_info}
                     onChange={(data) => setResumeData(prev => ({ ...prev, personal_info: data }))}
                     removeBackground={removeBackground}
                     setRemoveBackground={setRemoveBackground}
                   />
+
                 )}
 
                 {activeSection.id === 'summary' && (
@@ -173,20 +190,19 @@ const ResumeBuilder = () => {
           </div>
 
           {/* right panel - preview */}
-          <div
-            className='lg:col-span-7 max-lg:mt-6'
-          >
+          <div className='lg:col-span-7 max-lg:mt-6'>
+
             <div>
               {/* button */}
             </div>
 
-            <div>
-              {/* resume preview */}
-            </div>
-            
+            {/* resume preview */}
+            <ResumePreview data={resumeData} template={resumeData.template} accentColor={resumeData.accent_color} />
+
           </div>
 
         </div>
+
       </div>
 
     </div>
