@@ -3,7 +3,6 @@ import { dummyResumeData } from '../assets/assets';
 import { data, Link, useParams } from 'react-router-dom';
 import { ArrowLeftIcon, Briefcase, ChevronLeft, ChevronRight, FileText, FolderIcon, GraduationCap, SparkleIcon, User } from 'lucide-react';
 import PersonalInfoForm from '../components/PersonalInfoForm';
-import SummaryForm from '../components/SummaryForm';
 import ExperienceForm from '../components/ExperienceForm';
 import EducationForm from '../components/EducationForm';
 import ProjectsForm from '../components/ProjectsForm';
@@ -12,6 +11,7 @@ import { useText } from '../hooks/useText';
 import ResumePreview from '../components/ResumePreview';
 import TemplateSelector from '../components/TemplateSelector';
 import ColorPicker from '../components/ColorPicker';
+import ProfessionalSummaryForm from '../components/ProfessionalSummaryForm';
 
 const ResumeBuilder = () => {
   const t = useText("resumeBuilder");
@@ -23,11 +23,11 @@ const ResumeBuilder = () => {
     title: '',
     personal_info: {},
     personal_summary: '',
-    experiences: [],
+    experience: [],
     education: [],
     projects: [],
     skills: [],
-    templates: 'classic',
+    template: 'classic',
     accent_color: '#3b82F6',
     public: false
   });
@@ -136,36 +136,34 @@ const ResumeBuilder = () => {
 
               {/* form content */}
               <div className='space-y-6'>
-
                 {activeSection.id === 'personal' && (
-
                   <PersonalInfoForm
                     data={resumeData.personal_info}
                     onChange={(data) => setResumeData(prev => ({ ...prev, personal_info: data }))}
                     removeBackground={removeBackground}
                     setRemoveBackground={setRemoveBackground}
                   />
-
                 )}
 
                 {activeSection.id === 'summary' && (
-                  <SummaryForm
-                    resumeData={resumeData}
+                  <ProfessionalSummaryForm
+                    data={resumeData.professional_summary}
+                    onChange={(data) => setResumeData(prev => ({ ...prev, professional_summary: data }))}
                     setResumeData={setResumeData}
                   />
                 )}
 
                 {activeSection.id === 'experience' && (
                   <ExperienceForm
-                    resumeData={resumeData}
-                    setResumeData={setResumeData}
+                    data={resumeData.experience}
+                    onChange={(data) => setResumeData((prev) => ({ ...prev, experience: data }))}
                   />
                 )}
 
                 {activeSection.id === 'education' && (
                   <EducationForm
-                    resumeData={resumeData}
-                    setResumeData={setResumeData}
+                    data={resumeData.education}
+                    onChange={(data) => setResumeData((prev) => ({ ...prev, education: data }))}
                   />
                 )}
 

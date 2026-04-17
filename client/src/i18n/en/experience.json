@@ -1,0 +1,17 @@
+{
+  "sectionTitle": "Professional Experience",
+  "sectionDescription": "Add your job experience.",
+  "addButtonLabel": "Add Experience",
+  "emptyStateMessage": "No work experience added yet.",
+  "addExperienceButtonLabel": "Click 'Add Experience' to get started.",
+  "experienceLabel": "Experience #{number}",
+  "companyPlaceholder": "Company name",
+  "positionPlaceholder": "Job title",
+  "startDateLabel": "Start date",
+  "endDateLabel": "End date",
+  "currentJobLabel": "Currently working here",
+  "jobDescriptionLabel": "Job Description",
+  "jobDescriptionPlaceholder": "Describe your key responsibilities and achievements...",
+  "enhanceAIButton": "Enhance AI",
+  "deleteButtonAriaLabel": "Remove experience"
+}

@@ -1,0 +1,17 @@
+{
+  "sectionTitle": "Kinh nghiệm làm việc",
+  "sectionDescription": "Thêm kinh nghiệm làm việc của bạn.",
+  "addButtonLabel": "Thêm kinh nghiệm",
+  "emptyStateMessage": "Bạn chưa thêm kinh nghiệm làm việc.",
+  "addExperienceButtonLabel": "Nhấp vào 'Thêm kinh nghiệm' để bắt đầu.",
+  "experienceLabel": "Kinh nghiệm #{number}",
+  "companyPlaceholder": "Tên công ty",
+  "positionPlaceholder": "Chức danh",
+  "startDateLabel": "Ngày bắt đầu",
+  "endDateLabel": "Ngày kết thúc",
+  "currentJobLabel": "Hiện đang làm việc tại đây",
+  "jobDescriptionLabel": "Mô tả công việc",
+  "jobDescriptionPlaceholder": "Mô tả trách nhiệm chính và thành tựu của bạn...",
+  "enhanceAIButton": "Cải thiện bằng AI",
+  "deleteButtonAriaLabel": "Xóa kinh nghiệm"
+}

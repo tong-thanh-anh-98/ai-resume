@@ -1,0 +1,15 @@
+{
+  "accent": "Bảng màu",
+  "colors": {
+    "blue": "Xanh dương",
+    "indigo": "Chàm",
+    "purple": "Tím",
+    "green": "Xanh lá",
+    "red": "Đỏ",
+    "orange": "Cam",
+    "teal": "Xanh ngọc",
+    "pink": "Hồng",
+    "gray": "Xám",
+    "black": "Đen"
+  }
+}

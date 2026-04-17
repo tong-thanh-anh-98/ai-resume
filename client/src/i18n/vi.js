@@ -13,6 +13,10 @@ import classic from './vi/classic.json';
 import minimalImage from './vi/minimalImage.json';
 import minimalTemplate from './en/minimalTemplate.json';
 import modernTemplate from './en/modernTemplate.json';
+import professionalSummary from './vi/professionalSummary.json';
+import experience from './vi/experience.json';
+import templateSelector from './vi/templateSelector.json';
+import colorPicker from './vi/colorPicker.json';
 
 export default {
   auth,
@@ -29,5 +33,9 @@ export default {
   classic,
   minimalImage,
   minimalTemplate,
-  modernTemplate
+  modernTemplate,
+  professionalSummary,
+  experience,
+  templateSelector,
+  colorPicker
 };

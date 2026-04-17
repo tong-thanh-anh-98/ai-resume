@@ -13,6 +13,10 @@ import classic from './en/classic.json';
 import minimalImage from './en/minimalImage.json';
 import minimalTemplate from './en/minimalTemplate.json';
 import modernTemplate from './en/modernTemplate.json';
+import professionalSummary from './en/professionalSummary.json';
+import experience from './en/experience.json';
+import templateSelector from './en/templateSelector.json';
+import colorPicker from './en/colorPicker.json';
 
 export default {
   auth,
@@ -29,5 +33,9 @@ export default {
   classic,
   minimalImage,
   minimalTemplate,
-  modernTemplate
+  modernTemplate,
+  professionalSummary,
+  experience,
+  templateSelector,
+  colorPicker
 };

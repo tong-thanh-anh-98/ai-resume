@@ -1,0 +1,19 @@
+{
+  "template": "Bảng mẫu",
+  "classic": {
+    "name": "Cổ điển",
+    "preview": "Xem trước mẫu."
+  },
+  "modern": {
+    "name": "Hiện đại",
+    "preview": "Xem trước mẫu."
+  },
+  "minimal": {
+    "name": "Tối giản",
+    "preview": "Xem trước mẫu."
+  },
+  "minimalImage": {
+    "name": "Hình ảnh tối giản",
+    "preview": "Xem trước mẫu."
+  }
+}

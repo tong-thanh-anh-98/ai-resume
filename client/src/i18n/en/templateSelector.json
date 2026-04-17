@@ -1,0 +1,19 @@
+{
+  "template": "Template",
+  "classic": {
+    "name": "Classic",
+    "preview": "Preview the template."
+  },
+  "modern": {
+    "name": "Modern",
+    "preview": "Preview the template."
+  },
+  "minimal": {
+    "name": "Minimal",
+    "preview": "Preview the template."
+  },
+  "minimalImage": {
+    "name": "Minimal Image",
+    "preview": "Preview the template."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "accent": "Accent",
+  "colors": {
+    "blue": "Blue",
+    "indigo": "Indigo",
+    "purple": "Purple",
+    "green": "Green",
+    "red": "Red",
+    "orange": "Orange",
+    "teal": "Teal",
+    "pink": "Pink",
+    "gray": "Gray",
+    "black": "Black"
+  }
+}

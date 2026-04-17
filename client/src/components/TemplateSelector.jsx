@@ -1,14 +1,16 @@
 import { Check, Layout } from 'lucide-react';
 import React from 'react';
+import { useText } from '../hooks/useText';
 
 const TemplateSelector = ({ selectedTemplate, onChange }) => {
+  const t = useText("templateSelector");
   const [isOpen, setIsOpen] = React.useState(false);
 
   const templates = [
-    { id: 'classic', name: 'Classic', preview: 'Preview the template.' },
-    { id: 'modern', name: 'Modern', preview: 'Preview the template.' },
-    { id: 'minimal', name: 'Minimal', preview: 'Preview the template.' },
-    { id: 'minimal-image', name: 'Minimal Image', preview: 'Preview the template.' },
+    { id: 'classic', name: t.classic.name, preview: t.classic.preview },
+    { id: 'modern', name: t.modern.name, preview: t.modern.preview },
+    { id: 'minimal', name: t.minimal.name, preview: t.minimal.preview },
+    { id: 'minimal-image', name: t.minimalImage.name, preview: t.minimalImage.preview }
   ];
 
   return (
@@ -17,7 +19,8 @@ const TemplateSelector = ({ selectedTemplate, onChange }) => {
         onClick={() => setIsOpen(!isOpen)}
         className='flex items-center gap-1 text-sm text-blue-600 bg-gradient-to-r from-blue-50 to-blue-100 ring-blue-300 hover:ring transition-all px-2 py-2 rounded-lg'
       >
-        <Layout size={14} /> <span className='max-sm:hidden'>Template</span>
+        <Layout size={14} />
+        <span className='max-sm:hidden'>{t.template}</span>
       </button>
 
       {isOpen && (

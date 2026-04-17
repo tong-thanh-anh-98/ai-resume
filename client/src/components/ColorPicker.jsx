@@ -1,19 +1,21 @@
 import { Check, Palette } from 'lucide-react';
 import React from 'react';
+import { useText } from '../hooks/useText';
 
 const ColorPicker = ({ selectedColor, onChange }) => {
+  const t = useText("colorPicker");
 
   const colors = [
-    { name: 'Blue', value: '#3b82f6' },
-    { name: 'Indigo', value: '#6366f1' },
-    { name: 'Purple', value: '#8b5cf6' },
-    { name: 'Green', value: '#10b981' },
-    { name: 'Red', value: '#ef4444' },
-    { name: 'Orange', value: '#f97316' },
-    { name: 'Teal', value: '#14b8a6' },
-    { name: 'Pink', value: '#ec4899' },
-    { name: 'Gray', value: '#6b7280' },
-    { name: 'Black', value: '#1f2937' },
+    { name: t.colors.blue, value: '#3b82f6' },
+    { name: t.colors.indigo, value: '#6366f1' },
+    { name: t.colors.purple, value: '#8b5cf6' },
+    { name: t.colors.green, value: '#10b981' },
+    { name: t.colors.red, value: '#ef4444' },
+    { name: t.colors.orange, value: '#f97316' },
+    { name: t.colors.teal, value: '#14b8a6' },
+    { name: t.colors.pink, value: '#ec4899' },
+    { name: t.colors.gray, value: '#6b7280' },
+    { name: t.colors.black, value: '#1f2937' },
   ];
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -25,8 +27,8 @@ const ColorPicker = ({ selectedColor, onChange }) => {
         onClick={() => setIsOpen(!isOpen)}
         className='flex items-center gap-1 text-sm text-purple-600 bg-gradient-to-br from-purple-50 to-purple-100 ring-purple-300 hover:ring  transition-all px-3 py-2 rounded-lg'
       >
-
-        <Palette size={16} /> <span className='max-sm:hidden'>Accent</span>
+        <Palette size={16} />
+        <span className='max-sm:hidden'>{t.accent}</span>
 
       </button>
 
