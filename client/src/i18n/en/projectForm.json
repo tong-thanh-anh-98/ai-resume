@@ -1,0 +1,11 @@
+{
+  "sectionTitle": "Project",
+  "sectionDescription": "Add your project details.",
+  "addButtonLabel": "Add Project",
+  "projectLabel": "Project #{number}",
+  "namePlaceholder": "Enter project name.",
+  "typePlaceholder": "Enter type.",
+  "descriptionPlaceholder":"Enter description.",
+  "enhanceAIButton": "Enhance AI",
+  "deleteButtonAriaLabel": "Remove Project"
+}

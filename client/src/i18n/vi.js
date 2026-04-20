@@ -7,17 +7,19 @@ import testimonial from './vi/testimonial.json';
 import cta from './vi/cta.json';
 import footer from './vi/footer.json';
 import dashboard from './vi/dashboard.json';
-import personal from './vi/personal.json';
+import personalInfoForm from './vi/personalInfoForm.json';
 import resumeBuilder from './vi/resumeBuilder.json';
 import classicTemplate from './vi/classicTemplate.json';
 import minimalImageTemplate from './vi/minimalImageTemplate.json';
 import minimalTemplate from './vi/minimalTemplate.json';
 import modernTemplate from './vi/modernTemplate.json';
-import professionalSummary from './vi/professionalSummary.json';
-import experience from './vi/experience.json';
+import professionalSummaryForm from './vi/professionalSummaryForm.json';
+import experienceForm from './vi/experienceForm.json';
 import templateSelector from './vi/templateSelector.json';
 import colorPicker from './vi/colorPicker.json';
-import education from './vi/education.json';
+import educationForm from './vi/educationForm.json';
+import projectForm from './vi/projectForm.json';
+import skillForm from './vi/skillForm.json';
 
 export default {
   auth,
@@ -29,15 +31,17 @@ export default {
   cta,
   footer,
   dashboard,
-  personal,
+  personalInfoForm,
   resumeBuilder,
   classicTemplate,
   minimalImageTemplate,
   minimalTemplate,
   modernTemplate,
-  professionalSummary,
-  experience,
+  professionalSummaryForm,
+  experienceForm,
   templateSelector,
   colorPicker,
-  education
+  educationForm,
+  projectForm,
+  skillForm
 };

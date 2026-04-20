@@ -5,7 +5,7 @@ import { ArrowLeftIcon, Briefcase, ChevronLeft, ChevronRight, FileText, FolderIc
 import PersonalInfoForm from '../components/PersonalInfoForm';
 import ExperienceForm from '../components/ExperienceForm';
 import EducationForm from '../components/EducationForm';
-import ProjectsForm from '../components/ProjectsForm';
+import ProjectForm from '../components/ProjectForm';
 import SkillsForm from '../components/SkillsForm';
 import { useText } from '../hooks/useText';
 import ResumePreview from '../components/ResumePreview';
@@ -25,7 +25,7 @@ const ResumeBuilder = () => {
     personal_summary: '',
     experience: [],
     education: [],
-    projects: [],
+    project: [],
     skills: [],
     template: 'classic',
     accent_color: '#3b82F6',
@@ -48,7 +48,7 @@ const ResumeBuilder = () => {
     { id: 'summary', name: 'Summary', icon: FileText },
     { id: 'experience', name: 'Experience', icon: Briefcase },
     { id: 'education', name: 'Education', icon: GraduationCap },
-    { id: 'projects', name: 'Projects', icon: FolderIcon },
+    { id: 'project', name: 'Project', icon: FolderIcon },
     { id: 'skills', name: 'Skills', icon: SparkleIcon },
   ];
 
@@ -167,17 +167,17 @@ const ResumeBuilder = () => {
                   />
                 )}
 
-                {activeSection.id === 'projects' && (
-                  <ProjectsForm
-                    resumeData={resumeData}
-                    setResumeData={setResumeData}
+                {activeSection.id === 'project' && (
+                  <ProjectForm
+                    data={resumeData.project}
+                    onChange={(data) => setResumeData((prev) => ({ ...prev, project: data }))}
                   />
                 )}
 
                 {activeSection.id === 'skills' && (
                   <SkillsForm
-                    resumeData={resumeData}
-                    setResumeData={setResumeData}
+                    data={resumeData.skills}
+                    onChange={(data) => setResumeData((prev) => ({ ...prev, skills: data }))}
                   />
                 )}
 

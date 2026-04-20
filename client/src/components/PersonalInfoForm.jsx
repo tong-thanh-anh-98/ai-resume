@@ -4,7 +4,7 @@ import { BriefcaseBusiness, Globe, Linkedin, Mail, MapPin, Phone, User } from 'l
 
 const PersonalInfoForm = ({ data, onChange, removeBackground, setRemoveBackground }) => {
 
-  const t = useText("personal");
+  const t = useText("personalInfoForm");
 
   const handleChange = (file, value) => {
     onChange({ ...data, [file]: value });

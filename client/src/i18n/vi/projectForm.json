@@ -1,0 +1,11 @@
+{
+  "sectionTitle": "Dự án",
+  "sectionDescription": "Thêm thông tin dự án của bạn.",
+  "addButtonLabel": "Thêm dự án",
+  "projectLabel": "Dự án #{number}",
+  "namePlaceholder": "Nhập tên dự án.",
+  "typePlaceholder": "Nhập loại dự án.",
+  "descriptionPlaceholder": "Nhập mô tả dự án.",
+  "enhanceAIButton": "Cải thiện bằng AI",
+  "deleteButtonAriaLabel": "Xóa dự án"
+}

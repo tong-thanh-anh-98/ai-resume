@@ -3,7 +3,7 @@ import { useText } from '../hooks/useText';
 import { GraduationCap, Plus, Trash2 } from 'lucide-react';
 
 const EducationForm = ({ data, onChange }) => {
-  const t = useText("education");
+  const t = useText("educationForm");
 
   const addEducation = () => {
     const newEducation = {
@@ -79,7 +79,7 @@ const EducationForm = ({ data, onChange }) => {
                   value={education.institution || ""}
                   onChange={(e) => updateEducation(index, "institution", e.target.value)}
                   type="text"
-                  className='px-3 py-2 text-sm'
+                  className='px-3 py-2 text-sm rounded-lg'
                   placeholder={t.institutionPlaceholder}
                 />
 
@@ -87,7 +87,7 @@ const EducationForm = ({ data, onChange }) => {
                   value={education.degree || ""}
                   onChange={(e) => updateEducation(index, "degree", e.target.value)}
                   type="text"
-                  className='px-3 py-2 text-sm'
+                  className='px-3 py-2 text-sm rounded-lg'
                   placeholder={t.degreePlaceholder}
                 />
 
@@ -95,7 +95,7 @@ const EducationForm = ({ data, onChange }) => {
                   value={education.field || ""}
                   onChange={(e) => updateEducation(index, "field", e.target.value)}
                   type="text"
-                  className='px-3 py-2 text-sm'
+                  className='px-3 py-2 text-sm rounded-lg'
                   placeholder={t.fieldPlaceholder}
                 />
 
@@ -103,17 +103,17 @@ const EducationForm = ({ data, onChange }) => {
                   value={education.graduation_date || ""}
                   onChange={(e) => updateEducation(index, "graduation_date", e.target.value)}
                   type="month"
-                  className='px-3 py-2 text-sm'
-                />
-
-                <input
-                  value={education.gpa || ""}
-                  onChange={(e) => updateEducation(index, "gpa", e.target.value)}
-                  type="text"
-                  className='px-3 py-2 text-sm'
-                  placeholder={t.gpaPlaceholder}
+                  className='px-3 py-2 text-sm rounded-lg'
                 />
               </div>
+
+              <input
+                value={education.gpa || ""}
+                onChange={(e) => updateEducation(index, "gpa", e.target.value)}
+                type="text"
+                className='px-3 py-2 text-sm rounded-lg'
+                placeholder={t.gpaPlaceholder}
+              />
             </div>
           ))}
         </div>

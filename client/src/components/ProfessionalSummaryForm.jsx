@@ -3,7 +3,7 @@ import { useText } from '../hooks/useText';
 import { Sparkles } from 'lucide-react';
 
 const ProfessionalSummaryForm = ({ data, onChange, setResumeData }) => {
-  const t = useText("professionalSummary");
+  const t = useText("professionalSummaryForm");
 
   return (
     <div className='space-y-4'>

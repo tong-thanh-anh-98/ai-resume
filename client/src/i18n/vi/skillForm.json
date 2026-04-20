@@ -1,0 +1,10 @@
+{
+  "sectionTitle": "Kỹ năng",
+  "sectionDescription": "Thêm kỹ năng chuyên môn của bạn.",
+  "addButtonLabel": "Thêm kỹ năng",
+  "skillLabel": "Skill #{number}",
+  "skillPlaceholder": "Nhập các kỹ năng.",
+  "emptyStateMessage": "Chưa có kỹ năng nào được thêm.",
+  "reminderMessage": "Thêm kỹ năng chuyên môn và kỹ năng mềm của bạn ở trên.",
+  "skillGuidelines": "<strong>Mẹo:</strong> Thêm 8-12 kỹ năng liên quan. Bao gồm cả kỹ năng kỹ thuật (ngôn ngữ lập trình, công cụ) và kỹ năng mềm."
+}

@@ -3,7 +3,7 @@ import { useText } from '../hooks/useText';
 import { Briefcase, Plus, Sparkles, Trash2 } from 'lucide-react';
 
 const ExperienceForm = ({ data, onChange }) => {
-  const t = useText("experience");
+  const t = useText("experienceForm");
 
   const addExperience = () => {
     const newExperience = {

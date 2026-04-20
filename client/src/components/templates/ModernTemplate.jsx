@@ -135,7 +135,7 @@ const ModernTemplate = ({ data, accentColor }) => {
           {data.education && data.education.length > 0 && (
             <section>
               <h2 className="text-2xl font-light mb-4 pb-2 border-b border-gray-200">
-                Education
+                {t.education}
               </h2>
 
               <div className="space-y-4">
