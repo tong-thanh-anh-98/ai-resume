@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { useText } from "../../hooks/useText";
 
 const MinimalImageTemplate = ({ data, accentColor }) => {
-  const t = useText("minimalImage");
+  const t = useText("minimalImageTemplate");
 
   const formatDate = (dateStr) => {
     if (!dateStr) return "";

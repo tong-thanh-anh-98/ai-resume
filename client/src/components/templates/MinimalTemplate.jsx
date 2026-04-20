@@ -104,7 +104,7 @@ const MinimalTemplate = ({ data, accentColor }) => {
               <div key={index} className="flex justify-between items-baseline">
                 <div>
                   <h3 className="font-medium">
-                    {edu.degree} {edu.field && ` ${t.in} ${edu.field}`}
+                    {edu.degree} {edu.field && `${t.in} ${edu.field}`}
                   </h3>
                   <p className="text-gray-600">{edu.institution}</p>
                   {edu.gpa && <p className="text-sm text-gray-500">{t.gpa}: {edu.gpa}</p>}

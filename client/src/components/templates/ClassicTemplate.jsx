@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Linkedin, Globe } from "lucide-react";
 import { useText } from "../../hooks/useText";
 
 const ClassicTemplate = ({ data, accentColor }) => {
-  const t = useText("classic");
+  const t = useText("classicTemplate");
 
   const formatDate = (dateStr) => {
     if (!dateStr) return "";

@@ -9,14 +9,15 @@ import footer from './en/footer.json';
 import dashboard from './en/dashboard.json';
 import personal from './en/personal.json';
 import resumeBuilder from './en/resumeBuilder.json';
-import classic from './en/classic.json';
-import minimalImage from './en/minimalImage.json';
+import classicTemplate from './en/classicTemplate.json';
+import minimalImageTemplate from './en/minimalImageTemplate.json';
 import minimalTemplate from './en/minimalTemplate.json';
 import modernTemplate from './en/modernTemplate.json';
 import professionalSummary from './en/professionalSummary.json';
 import experience from './en/experience.json';
 import templateSelector from './en/templateSelector.json';
 import colorPicker from './en/colorPicker.json';
+import education from './en/education.json';
 
 export default {
   auth,
@@ -30,12 +31,13 @@ export default {
   dashboard,
   personal,
   resumeBuilder,
-  classic,
-  minimalImage,
+  classicTemplate,
+  minimalImageTemplate,
   minimalTemplate,
   modernTemplate,
   professionalSummary,
   experience,
   templateSelector,
-  colorPicker
+  colorPicker,
+  education
 };

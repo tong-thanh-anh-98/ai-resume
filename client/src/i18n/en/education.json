@@ -1,0 +1,15 @@
+{
+  "sectionTitle": "Education",
+  "sectionDescription": "Add your education details.",
+  "addButtonLabel": "Add Education",
+  "emptyStateMessage": "No education added yet.",
+  "addEducationButtonLabel": "Click 'Add Education' to get started.",
+  "educationLabel": "Education #{number}",
+  "institutionPlaceholder": "Institution name",
+  "degreePlaceholder": "Degree (e.g., Bachelor's, Master's).",
+  "fieldPlaceholder":"Field of study.",
+  "graduationDateLabel": "Graduation Date",
+  "gpaPlaceholder": "GPA (optional).",
+  "enhanceAIButton": "Enhance AI",
+  "deleteButtonAriaLabel": "Remove Education"
+}

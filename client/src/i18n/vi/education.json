@@ -1,0 +1,15 @@
+{
+  "sectionTitle": "Học vấn",
+  "sectionDescription": "Thêm thông tin học vấn của bạn.",
+  "addButtonLabel": "Thêm thông tin học vấn",
+  "emptyStateMessage": "Chưa có thông tin học vấn nào được thêm.",
+  "addEducationButtonLabel": "Nhấn ‘Thêm học vấn’ để bắt đầu.",
+  "educationLabel": "Mục học vấn #{number}",
+  "institutionPlaceholder": "Tên cơ sở đào tạo",
+  "degreePlaceholder": "Bằng cấp (ví dụ: Cử nhân, Thạc sĩ).",
+  "fieldPlaceholder":"Chuyên nghành học.",
+  "graduationDateLabel": "Ngày tốt nghiệp",
+  "gpaPlaceholder": "Điểm trung bình (không bắt buộc).",
+  "enhanceAIButton": "Cải thiện bằng AI",
+  "deleteButtonAriaLabel": "Xóa Mục học vấn."
+}
