@@ -11,5 +11,10 @@
     "education": "Education",
     "projects": "Projects",
     "skills": "Skills"
-  }
+  },
+  "saveButton": "Save changes",
+  "publicButton": "Public",
+  "privateButton": "Private",
+  "shareButton": "Share",
+  "downloadButton": "Download"
 }

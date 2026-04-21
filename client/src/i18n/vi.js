@@ -20,6 +20,7 @@ import colorPicker from './vi/colorPicker.json';
 import educationForm from './vi/educationForm.json';
 import projectForm from './vi/projectForm.json';
 import skillForm from './vi/skillForm.json';
+import preview from './vi/preview.json';
 
 export default {
   auth,
@@ -43,5 +44,6 @@ export default {
   colorPicker,
   educationForm,
   projectForm,
-  skillForm
+  skillForm,
+  preview
 };

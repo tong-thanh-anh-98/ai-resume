@@ -11,5 +11,10 @@
     "education": "Học vấn",
     "projects": "Dự án",
     "skills": "Kỹ năng"
-  }
+  },
+  "saveButton": "Lưu thay đổi",
+  "publicButton": "Công khai",
+  "privateButton": "Riêng tư",
+  "shareButton": "Chia sẻ",
+  "downloadButton": "Tải về"
 }

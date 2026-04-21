@@ -20,6 +20,7 @@ import colorPicker from './en/colorPicker.json';
 import educationForm from './en/educationForm.json';
 import projectForm from './en/projectForm.json';
 import skillForm from './en/skillForm.json';
+import preview from './en/preview.json';
 
 export default {
   auth,
@@ -43,5 +44,6 @@ export default {
   colorPicker,
   educationForm,
   projectForm,
-  skillForm
+  skillForm,
+  preview
 };

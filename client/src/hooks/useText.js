@@ -2,7 +2,9 @@ import { languages } from '../i18n';
 
 const DEFAULT_LANG = 'vi';
 const FALLBACK_LANG = 'en';
-// contrary 
+
+// -- // -- //
+
 // const DEFAULT_LANG = 'en';
 // const FALLBACK_LANG = 'vi';
 
